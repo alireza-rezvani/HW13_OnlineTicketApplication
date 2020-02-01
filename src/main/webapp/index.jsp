@@ -12,7 +12,7 @@
 
 <div class="bg-primary p-5 rounded-pill w-50 align-content-center" >
     <div class="h3">سامانه خرید آنلاین بلیط اتوبوس</div><br>
-    <form action="login">
+    <form action="login" method="post">
     <input class="rounded-pill text-center m-2"  type="text" name="username" placeholder="نام کاربری"><br>
     <input class="rounded-pill text-center m-2" type="password" name="password" placeholder="رمز عبور"><br>
     <input class="rounded-pill text-center m-2 btn-secondary btn" type="submit" value="ورود به سامانه">
