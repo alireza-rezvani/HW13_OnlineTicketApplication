@@ -17,8 +17,8 @@
 <div class="bg-primary p-5 rounded-pill w-50 align-content-center" >
 
     <form action="index.jsp">
-        <label class="h4">نام کاربری یا رمز عبور نامعتبر است</label><br>
-        <input class="rounded-pill text-center m-2 btn-secondary btn" type="submit" value="بارگشت">
+        <label class="h4">اطلاعات کاربری نامعتبر است</label><br>
+        <input class="rounded-pill text-center m-2 btn-secondary btn" type="submit" value="بارگشت به صفحه ورود">
     </form>
 
 </div>

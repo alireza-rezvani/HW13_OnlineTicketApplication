@@ -32,6 +32,6 @@ public class User {
     @Column(nullable = false)
     String gender;
 
-    @OneToMany(mappedBy = "owner")
+    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL)
     List<Ticket> tickets;
 }

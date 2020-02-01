@@ -29,4 +29,16 @@ public class Ticket {
 
     @ManyToOne
     Trip trip;
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", family='" + family + '\'' +
+                ", gender='" + gender + '\'' +
+                ", owner username=" + owner.getUsername() +
+                ", trip id=" + trip.getId() +
+                '}';
+    }
 }

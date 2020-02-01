@@ -3,16 +3,20 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  
+<!--  *********************************** filters & filters mapping ************************************-->
   <filter>
     <filter-name>loginFilter</filter-name>
     <filter-class>ir.maktab32.java.homeworks.onlineticket.filters.LoginFilter</filter-class>
   </filter>
+  
   <filter-mapping>
     <filter-name>loginFilter</filter-name>
     <url-pattern>/login</url-pattern>
   </filter-mapping>
-  
+
+
+  <!--  *********************************** servlets ************************************-->
+
   <servlet>
     <servlet-name>loginServlet</servlet-name>
     <servlet-class>ir.maktab32.java.homeworks.onlineticket.servlets.LoginServlet</servlet-class>
@@ -23,23 +27,38 @@
 <!--    <servlet-name>accountServlet</servlet-name>-->
 <!--    <servlet-class>ir.maktab32.java.homeworks.onlineticket.servlets.AccountServlet</servlet-class>-->
 <!--  </servlet>-->
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>accountServlet</servlet-name>-->
-<!--    <url-pattern>/account</url-pattern>-->
-<!--  </servlet-mapping>-->
+
   
   <servlet>
     <servlet-name>logoutServlet</servlet-name>
     <servlet-class>ir.maktab32.java.homeworks.onlineticket.servlets.LogoutServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>myTicketsServlet</servlet-name>
+    <servlet-class>ir.maktab32.java.homeworks.onlineticket.servlets.MyTicketsServlet</servlet-class>
+  </servlet>
+
+
+  <!--  *********************************** servlets mapping ************************************-->
 
   <servlet-mapping>
     <servlet-name>loginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
+  <!--  <servlet-mapping>-->
+  <!--    <servlet-name>accountServlet</servlet-name>-->
+  <!--    <url-pattern>/account</url-pattern>-->
+  <!--  </servlet-mapping>-->
+
   <servlet-mapping>
     <servlet-name>logoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>myTicketsServlet</servlet-name>
+    <url-pattern>/myTickets</url-pattern>
   </servlet-mapping>
 </web-app>
