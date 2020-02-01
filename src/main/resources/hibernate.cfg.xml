@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/ticketApp?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">false</property>
+
+
+        <mapping class="ir.maktab32.java.homeworks.onlineticket.entities.User"/>
+        <mapping class="ir.maktab32.java.homeworks.onlineticket.entities.Trip"/>
+        <mapping class="ir.maktab32.java.homeworks.onlineticket.entities.Ticket"/>
+
+    </session-factory>
+</hibernate-configuration>
