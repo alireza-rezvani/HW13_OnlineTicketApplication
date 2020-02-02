@@ -7,24 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8eba48d-3230-4022-a31c-e1fb98aa276c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/notEnoughData.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/features/usermanagement/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/features/usermanagement/UserDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/AccountServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/BuyTicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/BuyTicketServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab32/java/homeworks/onlineticket/servlets/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/account.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/delete.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/enterInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/enterInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login_error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myTickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/myTickets.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/purchaseInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/purchaseInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/seeTicket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/seeTicket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/notEnoughData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/notEnoughData.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +246,7 @@
       <workItem from="1580549481838" duration="924000" />
       <workItem from="1580552893548" duration="21877000" />
       <workItem from="1580576951166" duration="4360000" />
-      <workItem from="1580629033562" duration="34734000" />
+      <workItem from="1580629033562" duration="35021000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1580540385351</created>
@@ -375,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580584176790</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="project completed to send">
+      <created>1580674033595</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1580674033595</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +403,8 @@
     <MESSAGE value="account.jsp completed" />
     <MESSAGE value="LogoutServlet completed" />
     <MESSAGE value="project almost finished&#10;needs some edit about bugs and UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="project almost finished&#10;needs some edit about bugs and UI" />
+    <MESSAGE value="project completed to send" />
+    <option name="LAST_COMMIT_MESSAGE" value="project completed to send" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580542729809">
@@ -422,58 +415,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580574225928" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580584175103">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1580674031844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580584175103" />
-    <state width="893" height="245" key="GridCell.Tab.0.bottom" timestamp="1580673607619">
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580674031844" />
+    <state width="893" height="245" key="GridCell.Tab.0.bottom" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.0.center" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.0.center" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.0.left" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.0.left" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.0.right" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.0.right" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.1.bottom" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.1.bottom" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.1.center" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.1.center" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.1.left" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.1.left" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.1.right" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.1.right" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.2.bottom" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.2.bottom" timestamp="1580674276004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.2.center" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580674276004" />
+    <state width="893" height="245" key="GridCell.Tab.2.center" timestamp="1580674276004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.2.left" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1580674276004" />
+    <state width="893" height="245" key="GridCell.Tab.2.left" timestamp="1580674275988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
-    <state width="893" height="245" key="GridCell.Tab.2.right" timestamp="1580673607619">
+    <state width="893" height="245" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1580674275988" />
+    <state width="893" height="245" key="GridCell.Tab.2.right" timestamp="1580674276004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="893" height="245" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1580673607619" />
+    <state width="893" height="245" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1580674276004" />
     <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1580629088527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -17,8 +17,17 @@ public class Main {
     }
 }
 
+
+
+
+
+
+
+
+
+
 // TODO: 2/2/2020 its better to save all searchable cities somewher in database and load from database for searching choice
-// TODO: 2/2/2020 check permission for entering all servlets and jsps (signed in & having needed params & attributes)
-// TODO: 2/2/2020 complete notEnoughData.jsp to manage app when validations failed 
+// TODO: 2/2/2020 check permission for entering all servlets & jsps (signed in & having needed params & attributes)
+//  complete notEnoughData.jsp to manage app when validations failed (some parts have been checked for validations)
 // TODO: 2/2/2020 add 31 days a month add a filter to avoid invalid date search
 // TODO: 2/2/2020 some servlets are using annotations, edit if needed

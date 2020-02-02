@@ -11,6 +11,5 @@
     <title>Title</title>
 </head>
 <body>
-<%--todo: redirect to account.jsp--%>
 </body>
 </html>
