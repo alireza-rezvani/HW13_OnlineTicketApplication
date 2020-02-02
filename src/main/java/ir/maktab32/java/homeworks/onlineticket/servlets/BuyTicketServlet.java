@@ -9,10 +9,7 @@ import ir.maktab32.java.homeworks.onlineticket.repositories.UserRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
  @WebServlet("/buyTicket")
 public class BuyTicketServlet extends HttpServlet {
@@ -36,9 +33,9 @@ public class BuyTicketServlet extends HttpServlet {
 
             UserRepository.getInstance().update(owner);
             session.setAttribute("boughtTicket", ticket);
+
             resp.sendRedirect("purchaseInfo.jsp");
 
-            //todo check sending boughtTicket by cookie
         }
     }
 }

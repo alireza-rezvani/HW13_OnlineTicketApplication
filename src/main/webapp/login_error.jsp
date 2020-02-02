@@ -12,16 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
-<body class="text-center row p-5 justify-content-center align-content-center" style="font-family: 'B Mitra'">
+<body class="row justify-content-center align-content-center p-5 bg-info " style="font-family: 'B Mitra'">
 
-<div class="bg-primary p-5 rounded-pill w-50 align-content-center" >
 
-    <form action="index.jsp">
+    <form action="index.jsp" class="bg-transparent w-50 text-center p-5">
         <label class="h4">اطلاعات کاربری نامعتبر است</label><br>
-        <input class="rounded-pill text-center m-2 btn-secondary btn" type="submit" value="بارگشت به صفحه ورود">
+        <input class="rounded text-center m-2  btn btn-dark" type="submit" value="بارگشت به صفحه ورود">
     </form>
 
-</div>
 
 </body>
 </html>

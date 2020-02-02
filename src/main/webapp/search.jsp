@@ -12,48 +12,31 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>جستجو</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
-<body class="col text-center row p-5 justify-content-center align-content-center" style="font-family: 'B Mitra'">
+
+<body  class="p-5 bg-info" style="font-family: 'B Mitra'">
 
 <%
     List<String> allCities = Arrays.asList("تهران","مشهد","تبریز");
 %>
 
 
-<form action="search" class="bg-primary p-5 rounded-pill w-50 align-content-center">
-    <div class="row align-content-center justify-content-between">
+<form action="search" class="form-inline justify-content-center bg-transparent">
 
 
-        <div>
-            <label>مبدا</label><br>
-            <select name="origin">
-                <%
-                    for (String i : allCities){
-                        out.print("<option value='"+i+"'>"+i+"</option>");
-                    }
-                %>
-            </select>
-        </div>
-
-        <div>
-            <label>مقصد</label><br>
-            <select name="destination">
-                <%
-                    for (String i : allCities){
-                        out.print("<option value='"+i+"'>"+i+"</option>");
-                    }
-                %>
-            </select>
-        </div>
+    <div class="m-3">
+        <label>کلیک کنید</label><br>
+        <input class="btn btn-secondary" type="submit" value="جستجوس آنلاین">
+    </div>
 
 
-        <div>
+        <div class="m-3">
             <label>سال</label><br>
-            <select name="year">
+            <select class="custom-select" name="year">
                 <%
                     for (int i = 1398; i <= 1410; i++)
                         out.print("<option value='"+i+"'>"+i+"</option>");
@@ -62,9 +45,9 @@
         </div>
 
 
-        <div>
+        <div class="m-3">
             <label>ماه</label><br>
-            <select name="month">
+            <select class="custom-select" name="month">
                 <%
                     for (int i = 1; i <= 12; i++)
                         out.print("<option value='"+i+"'>"+i+"</option>");
@@ -73,9 +56,9 @@
         </div>
 
 
-        <div>
+        <div class=" m-3">
             <label>روز</label><br>
-            <select name="day">
+            <select class="custom-select" name="day">
                 <%
                     for (int i = 1; i <= (30); i++)
                         out.print("<option value='"+i+"'>"+i+"</option>");
@@ -83,45 +66,83 @@
             </select>
         </div>
 
-        <div>
-            <label>کلیک کنید</label><br>
-        <input type="submit" value="جستجوس آنلاین">
-        </div>
 
+
+    <div class="m-3">
+        <label>مقصد</label><br>
+        <select class="custom-select" name="destination">
+            <%
+                for (String i : allCities){
+                    out.print("<option value='"+i+"'>"+i+"</option>");
+                }
+            %>
+        </select>
     </div>
-</form>
 
+    <div class="m-3">
+        <label>مبدا</label><br>
+        <select class="custom-select" name="origin">
+            <%
+                for (String i : allCities){
+                    out.print("<option value='"+i+"'>"+i+"</option>");
+                }
+            %>
+        </select>
+    </div>
+
+
+
+</form>
 
 
 <% String origin = (session.getAttribute("originChoice") == null? "مبدا" : (String) (session.getAttribute("originChoice")));
 String destination = (session.getAttribute("destinationChoice") == null? "مقصد" : (String) (session.getAttribute("destinationChoice")));
-String date = (session.getAttribute("dateChoice") == null? "تاریخ" :(String) (session.getAttribute("dateChoice")));
+String date = (session.getAttribute("dateChoice") == null? "0000/00/00" :(String) (session.getAttribute("dateChoice")));
 List<Trip> matchedTrips = (List<Trip>) session.getAttribute("mTrips");
 %>
-<table>
+<div class="row justify-content-center">
+<table class=" table table-dark table-striped w-50">
     <tr>
-        <th colspan="3"><% out.print("از " + origin + " به " + destination + " در تاریخ " + date); %></th>
+
+        <th class="text-left"><% out.print("تاریخ: " + date); %></th>
+        <th colspan="2" class="text-right"><% out.print("مسیر: " + origin + " - " + destination ); %></th>
     </tr>
-    <tr>
-        <th>انتخاب</th>
+    <tr class="text-center">
+        <th >شناسه سفر</th>
         <th>ساعت</th>
-        <th>شناسه سفر</th>
-    </tr>
+        <th>انتخاب</th>
+    </tr >
 
     <%
 
         if (matchedTrips != null && matchedTrips.size() > 0){
             for (Trip i : matchedTrips){
 
-                out.print("<tr>");
-                out.print("<td><a href='enterInfo.jsp?tripId="+i.getId()+"'>خرید</a></td>");
-                out.print("<td>"+i.getTime()+"</td>");
+                out.print("<tr class='text-center '>");
+
                 out.print("<td>"+i.getId()+"</td>");
+
+                out.print("<td>"+i.getTime()+"</td>");
+
+                out.print("<td>");
+                out.print("<form action='enterInfo.jsp'>");
+                out.print("<input type='text' style='display: none' name='tripId' value='"+i.getId()+"'>");
+                out.print("<input type='submit' value='خرید' class='btn btn-success'/>");
+                out.print("</form>");
+                out.print("</td>");
+
+
                 out.print("</tr>");
             }
         }
     %>
 </table>
+
+</div>
+
+<form class="row justify-content-center">
+    <input type="submit" value="بازگشت به صفحه اصلی" formaction="account.jsp" class="btn btn-light">
+</form>
 
 </body>
 </html>

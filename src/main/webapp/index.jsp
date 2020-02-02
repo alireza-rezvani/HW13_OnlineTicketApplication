@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
-<body class="text-center row p-5 justify-content-center align-content-center" style="font-family: 'B Mitra'">
+<body class="row p-5 bg-info justify-content-center align-content-center" style="font-family: 'B Mitra'">
 
-<div class="bg-primary p-5 rounded-pill w-50 align-content-center" >
-    <div class="h3">سامانه خرید آنلاین بلیط اتوبوس</div><br>
+<div class="bg-white rounded p-1 w-50 text-center" >
+    <div class="rounded bg-info p-2 w-auto">
+    <div class="h3 rounded p-2 w-auto">سامانه خرید آنلاین بلیط اتوبوس</div><br>
     <form action="login" method="post">
-    <input class="rounded-pill text-center m-2"  type="text" name="username" placeholder="نام کاربری"><br>
-    <input class="rounded-pill text-center m-2" type="password" name="password" placeholder="رمز عبور"><br>
-    <input class="rounded-pill text-center m-2 btn-secondary btn" type="submit" value="ورود به سامانه">
-</form>
+    <input class="rounded  m-2 text-center"  type="text" name="username" placeholder="نام کاربری"><br>
+    <input class="rounded  m-2 text-center" type="password" name="password" placeholder="رمز عبور"><br>
+    <input class="rounded  m-2 btn btn-dark" type="submit" value="ورود به سامانه">
+    </form>
+    </div>
 </div>
 </body>
 

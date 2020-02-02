@@ -13,16 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
-<body class="text-center row p-5 justify-content-center align-content-center" style="font-family: 'B Mitra'">
+<body class="row justify-content-center p-5 bg-info" style="font-family: 'B Mitra'">
 
-<table>
+<div  class="w-50">
+<table class="table table-dark table-striped w-100">
     <tr>
-        <th colspan="3">لیست بلیطهای خریداری شده</th>
+        <th colspan="3" class="text-center">لیست بلیطهای خریداری شده</th>
     </tr>
-    <tr>
-        <th>انتخاب</th>
-        <th>شناسه بلیط</th>
+    <tr class="text-center">
         <th>تاریخ</th>
+        <th>شناسه بلیط</th>
+        <th>انتخاب</th>
     </tr>
     <%
         List<Ticket> userTickets =(List<Ticket>) session.getAttribute("userTickets");
@@ -32,10 +33,10 @@
         if (userTickets.size() > 0){
             for (Ticket i : userTickets){
 
-                out.print("<tr>");
-                out.print("<td><a href='seeTicket.jsp?ticketId="+i.getId()+"'>مشاهده</a></td>");
-                out.print("<td>"+i.getId()+"</td>");
+                out.print("<tr  class='text-center'>");
                 out.print("<td>"+i.getTrip().getDate()+"</td>");
+                out.print("<td>"+i.getId()+"</td>");
+                out.print("<td><a href='seeTicket.jsp?ticketId="+i.getId()+"'>مشاهده بلیط</a></td>");
                 out.print("</tr>");
             }
         }
@@ -43,5 +44,10 @@
 
 
 </table>
+
+    <form class="row justify-content-center">
+        <input type="submit" value="بازگشت به صفحه اصلی" formaction="account.jsp" class="btn btn-light">
+    </form>
+</div>
 </body>
 </html>
